@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question in #ask-guild
+    url: https://example.com
+    about: Ask for support or discuss a general question with the community on Slack.

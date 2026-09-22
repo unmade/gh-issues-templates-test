@@ -1,0 +1,67 @@
+name: Bug report
+description: Report unexpected behaviour in the repository.
+title: "[Bug]: "
+labels:
+  - BUG
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to help improve these modules. Before reporting a bug,
+        please search existing issues to avoid duplicates.
+
+        For general support or usage questions, use
+        [#ask-guild](https://example.com)
+        instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the unexpected behaviour and the impact it has.
+      placeholder: I expected …, but … happened.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can we reproduce it?
+      description: Give the smallest complete example, including relevant configuration.
+      placeholder: |
+        1. Install …
+        2. Run …
+        3. Observe …
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Describe the intended behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the affected package and version, Python version, and any other relevant dependency or platform details.
+      placeholder: |
+        Package and version: …
+        Python version: 3.…
+        Platform: …
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add logs, tracebacks, screenshots, or any other useful details. Please remove sensitive information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I removed sensitive information from this report.
+          required: true

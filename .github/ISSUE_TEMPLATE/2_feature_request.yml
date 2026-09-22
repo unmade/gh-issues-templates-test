@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest an improvement to the repository.
+title: "[Feature]: "
+labels:
+  - FEATURE
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. GitHub Issues are for changes that can be
+        understood and contributed to by the Python community.
+
+        For general questions, large RFCs, or fundamental proposals, start a discussion
+        in [#ask-guild](https://example.com).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the use case and who it affects.
+      placeholder: It is difficult to … because …
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: What would you like to happen?
+      description: Describe the desired outcome. An implementation sketch is welcome but not required.
+      placeholder: Add or change … so that …
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What alternatives have you considered?
+      description: Include current workarounds, if any.
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you be interested in contributing this?
+      options:
+        - "Yes, I can contribute an implementation."
+        - "Yes, with guidance."
+        - "No, but I can help clarify the use case."
+        - "No."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add examples, links, or other details that would help someone pick up this work.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
