@@ -7,12 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to help improve these modules. Before reporting a bug,
-        please search existing issues to avoid duplicates.
-
-        For general support or usage questions, use
-        [#ask-guild](https://example.com)
-        instead.
+        Thanks for taking the time to help improve these modules!
   - type: textarea
     id: problem
     attributes:
