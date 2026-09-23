@@ -28,3 +28,8 @@ https://example.com
 ## Additional context
 
 <!-- Add logs, tracebacks, screenshots, or other useful details. Remove sensitive information. -->
+
+## Checklist
+
+- [ ] I searched existing issues and did not find a duplicate.
+- [ ] I removed sensitive information from this report.

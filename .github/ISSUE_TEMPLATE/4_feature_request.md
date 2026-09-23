@@ -26,3 +26,7 @@ https://example.com
 ## Additional context
 
 <!-- Add examples, links, or other details that would help someone pick up this work. -->
+
+## Checklist
+
+- [ ] I searched existing issues and did not find a duplicate.
