@@ -1,27 +1,28 @@
 name: Feature request
-description: Suggest an improvement to the repository.
-title: "[Feature]: "
+description: Suggest an improvement to an Acme Python support module.
+title: "acme-<module>: "
 labels:
-  - FEATURE
+  - feature
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an improvement! For general questions, large RFCs, or fundamental proposals, please start a discussion in [#ask-guild](https://example.com).
+        Thanks for suggesting an improvement
+
+        For general questions, large RFCs, or fundamental proposals, start a discussion in [#sys-python-guild](https://example.com).
   - type: textarea
-    id: problem
+    id: description
     attributes:
-      label: What problem would this solve?
-      description: Describe the use case and who it affects.
-      placeholder: It is difficult to … because …
-    validations:
-      required: true
-  - type: textarea
-    id: proposed-solution
-    attributes:
-      label: What would you like to happen?
-      description: Describe the desired outcome. An implementation sketch is welcome but not required.
-      placeholder: Add or change … so that …
+      label: Description
+      description: Describe the problem or use case and what you would like to happen.
+      value: |
+        ## What problem would this solve?
+
+        <!-- Describe the use case and who it affects. -->
+
+        ## What would you like to happen?
+
+        <!-- Describe the desired outcome. An implementation sketch is welcome but not required. -->
     validations:
       required: true
   - type: textarea
@@ -40,11 +41,6 @@ body:
         - "No."
     validations:
       required: true
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Add examples, links, or other details that would help someone pick up this work.
   - type: checkboxes
     id: checks
     attributes:

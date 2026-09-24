@@ -1,38 +1,39 @@
 name: Bug report
-description: Report unexpected behaviour in the repository.
-title: "[Bug]: "
+description: Report unexpected behaviour in an Acme Python support module.
+title: "acme-<module>: "
 labels:
-  - BUG
+  - bug
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to help improve these modules!
+        Thanks for taking the time to help improve these modules.
+
+        For general support or usage questions, use [#sys-python-guild](https://example.com) instead.
   - type: textarea
-    id: problem
+    id: description
     attributes:
-      label: What happened?
-      description: Describe the unexpected behaviour and the impact it has.
-      placeholder: I expected …, but … happened.
+      label: Description
+      description: Describe what happened, what you expected to happen, and the impact of the problem.
+      value: |
+        ## What happened?
+
+        <!-- Describe the unexpected behaviour and the impact it has. -->
+
+        ## What did you expect to happen?
+
+        <!-- Describe the intended behaviour. -->
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: How can we reproduce it?
-      description: Give the smallest complete example, including relevant configuration.
+      description: Give the smallest complete example, including relevant configuration and logs.
       placeholder: |
         1. Install …
         2. Run …
         3. Observe …
-      render: python
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: What did you expect to happen?
-      description: Describe the intended behaviour.
     validations:
       required: true
   - type: textarea
@@ -41,16 +42,11 @@ body:
       label: Environment
       description: Include the affected package and version, Python version, and any other relevant dependency or platform details.
       placeholder: |
-        Package and version: …
+        Package and version: acme-…
         Python version: 3.…
         Platform: …
     validations:
       required: true
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Add logs, tracebacks, screenshots, or any other useful details. Please remove sensitive information.
   - type: checkboxes
     id: checks
     attributes:
