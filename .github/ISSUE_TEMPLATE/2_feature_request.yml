@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an improvement
+        Thanks for suggesting an improvement!
 
         For general questions, large RFCs, or fundamental proposals, start a discussion in [#sys-python-guild](https://example.com).
   - type: textarea

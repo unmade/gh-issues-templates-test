@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to help improve these modules.
+        Thanks for taking the time to help improve these modules!
 
         For general support or usage questions, use [#sys-python-guild](https://example.com) instead.
   - type: textarea
@@ -26,17 +26,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reproduction
-    attributes:
-      label: How can we reproduce it?
-      description: Give the smallest complete example, including relevant configuration and logs.
-      placeholder: |
-        1. Install …
-        2. Run …
-        3. Observe …
-    validations:
-      required: true
-  - type: textarea
     id: environment
     attributes:
       label: Environment
@@ -45,6 +34,17 @@ body:
         Package and version: acme-…
         Python version: 3.…
         Platform: …
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can we reproduce it?
+      description: Give the smallest complete example, including relevant configuration and logs.
+      placeholder: |
+        1. Install …
+        2. Run …
+        3. Observe …
     validations:
       required: true
   - type: checkboxes
